@@ -1,0 +1,111 @@
+.NavBar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 40px 0 !important;
+    width: 100%;
+}
+
+.NavBar ul{
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-width: 60px;
+}
+
+.NavBar ul::-webkit-scrollbar {
+    height: 0;
+}
+
+.NavBar li {
+    display: flexbox;
+}
+
+.NavBar a {
+    padding: 10px;
+    text-decoration: none;
+    color: dimgray;
+}
+
+.HomeIcon{
+    color: var(--text-secondary) !important;
+}
+
+.NavBar span{
+    padding: 10px;
+    font-size: 22px;
+    align-self: center;
+}
+
+.Auth{
+    display: flex;
+}
+
+.Auth a{
+    padding: 12px 10px;
+    float:none;
+    border-radius: 20px;
+    width: 160px;
+    display: flexbox;
+    align-self: center;
+    font-size: 11px;
+    color: var(--text-primary);
+    background-color: var(--background);
+    border: 1px var(--text-primary) solid;
+    transition: all 1s;
+    text-align: center;
+}
+
+.SignButton{
+    background-color: transparent !important;
+    border: 0px transparent solid !important;
+}
+
+.CreateButton{
+    padding: 11px 10px !important;
+    background-color: black !important;
+    color: white !important;
+}
+
+/* Max width 980 */
+@media screen and (max-width: 980px){
+    .NavBar li a{
+        padding: 5px;
+        font-size: 18px;
+        align-self: center;
+    }
+    .NavBar span{
+        padding: 5px;
+        font-size: 20px;
+        align-self: center;
+    }
+    .Auth a{
+        padding: 6px !important;
+        width: 80px;
+    }
+}
+
+/* Max width 680 */
+@media screen and (max-width: 680px){
+    .NavBar ul{
+        max-width: 180px;
+    }
+    .Auth a{
+        padding: 3px !important;
+        width: 72px;
+        font-size: 10px !important;
+    }
+    .Auth .SignButton{
+        width: 50px;
+    }
+}
+
+/*  Max width 480 */ 
+@media screen and (max-width: 480px){
+    .NavBar {
+        margin: -3%;
+    }
+} 
